@@ -1,0 +1,128 @@
+<!DOCTYPE html><html>
+
+<style>
+    *{
+        background-color: rgb(0, 0, 0);
+        margin-top: 3em;
+    }
+    .vapour{
+        position: absolute;;
+        display:flex;
+        margin-left:46.5%;
+        margin-top: 6em;
+     
+    }
+    .vapour span{
+        background-color: rgb(255, 255, 255);
+        margin:0 2px 50px;
+        display: block;
+        min-width: 8px;
+        height: 120px;
+        bottom: 50px;
+        position:relative;
+        border-radius: 50%;
+        animation: animate 5s linear infinite;
+        opacity: 0;
+        filter: blur(8px);
+        animation-delay:calc(var(--i)* -0.5s);
+    }
+    @keyframes animate{
+        0%{
+            transform: translateY(0) scaleX(1);
+            opacity: 0;
+        }
+       15%{
+           opacity: 1;
+       }
+        50%{ transform: translateY(-50px) scaleX(5);
+        }
+        95%{opacity: 0;}
+        100%{ transform: translateY(-300px) scaleX(10);
+            opacity: 1;
+        }}
+    .div3{
+        height: 3em;
+        width:18em;
+        background:linear-gradient(to left,rgb(255, 255, 255),rgb(206, 103, 7));
+        margin-left: 45%;
+        margin-top: 12%;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 10;
+        border-top-left-radius:30px ;
+        border-top-right-radius:30px ;
+        box-shadow: 0px 5px 35px rgb(189, 145, 63);
+
+    }
+    .div1{
+        height: 20em;
+        width: 18em;
+        margin-left: 45%;
+        margin-top: 15%;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%;         
+        border-bottom:rgb(80, 79, 79,0.5) 2px solid;
+        z-index:1;
+        position: absolute;
+        background-image: url('kids_exercise/animal1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 5px 35px rgb(75, 75, 75);
+
+    }
+    .div2{
+        height: 160px;
+        width: 160px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        margin-left:58%;
+        border:25px solid rgb(235, 235, 235);
+        border-left: transparent solid 25px;
+        border-bottom: transparent solid 25px;
+        transform: rotate(48.5deg);
+        border-radius: 50%;
+        margin-top:14em;
+        box-shadow: 0px 5px 35px rgb(98, 98, 98);
+
+    }
+    section{
+        height:5em;
+        width:30em;
+        background: linear-gradient(to bottom,grey,white);
+        margin-left:38%;
+        margin-top:36%;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 40%;
+        position: absolute;
+        box-shadow: 0px 5px 35px rgb(53, 53, 53)
+        ;
+    }
+</style>
+<div class="vapour">
+    <span style="--i:1;"></span>
+    <span style="--i:3;"></span>
+    <span style="--i:16;"></span>
+    <span style="--i:5;"></span>
+    <span style="--i:20;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:6;"></span>
+    <span style="--i:7;"></span>
+    <span style="--i:10;"></span>
+    <span style="--i:8;"></span>
+    <span style="--i:17;"></span>
+    <span style="--i:11;"></span>
+    <span style="--i:12;"></span>
+    <span style="--i:14;"></span>
+    <span style="--i:2;"></span>
+    <span style="--i:9;"></span>
+    <span style="--i:15;"></span>
+    <span style="--i:4;"></span>
+    <span style="--i:19;"></span>
+</div>
+<div class="div3"></div>
+<div class="div1"></div>
+<section></section>
+<div class="div2"></div>
+</html>
